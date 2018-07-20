@@ -16,3 +16,136 @@ $head_brown: #faf3ee;
 $back_brown: #e9dbd1;
 $brown: #55371e;
 $black: #626262;
+
+body {
+    font-family: $ja_font;
+}
+
+.pc {
+    display: none;
+}
+// .pc
+
+header {
+    background: $head_brown;
+    
+    #header_in {
+        padding-top: 10px;
+        padding-bottom: 4px;
+        
+        .row {
+            .logo {
+                width: 91px;
+            }
+            // .logo
+            
+            .navi {
+                width: 40px;
+                float: right;
+                
+                .sp_navi_li {
+                    width: 180px;
+                    position: absolute;
+                    top: 50px;
+                    right: 20px;
+                    border: 1px solid #eee;
+                    background: white;
+                    margin: 0;
+                    padding: 0;
+                    display: none;
+                    
+                    li {
+                        list-style: none;
+                        margin: 0;
+                        padding: 0;
+                        
+                        a {
+                            display: block;
+                            padding: 10px 8px;
+                            border-bottom: 1px solid #eee;
+                            text-decoration: none;
+                            @include fontsize(14);
+                        }
+                        // a
+                    }
+                    // li
+                }
+                // .sp_navi_li
+            }
+            // .navi
+        }
+        // .row
+    }
+    // #header_in
+}
+// header
+
+// PCサイト
+@media (min-width: 768px) {
+    .sp {
+        display: none;
+    }
+    // .sp
+    
+    .pc {
+        display: block;
+    }
+    // .pc
+    
+    header {
+        #header_in {
+            .row {
+                .logo {
+                    width: 115px;
+                }
+                // .logo
+                
+                .navi {
+                    float: left;
+                    width: 100%;
+                    
+                    .eight {
+                        position: relative;
+                    }
+                    
+                    .pc_navi_li {
+                        margin: 0;
+                        margin-bottom: -6px;
+                        padding: 0;
+                        position: absolute;
+                        right: 0;
+                        bottom: 0;
+                        
+                        li {
+                            display: inline-block;
+                            list-style: none;
+                            border-left: 3px solid $brown;
+                            
+                            a {
+                                color: $brown;
+                                text-decoration: none;
+                                font-weight: bold;
+                                @include fontsize(14);
+                                float: left;
+                                padding: 0 20px;
+                                
+                                &:hover {
+                                    border-bottom: 3px solid $brown;
+                                }
+                            }
+                            
+                            &:last-child {
+                                border-right: 3px solid $brown;
+                            }
+                        }
+                    }
+                    // .pc_navi_li
+                }
+                // .navi
+            }
+            // .row
+        }
+        // #header_in
+    }
+    // header
+}

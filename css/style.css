@@ -1,4 +1,81 @@
+@charset "UTF-8";
 html {
   font-size: 62.5%; }
+
+body {
+  font-family: "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Verdana, "ＭＳ Ｐゴシック", sans-serif; }
+
+.pc {
+  display: none; }
+
+header {
+  background: #faf3ee; }
+  header #header_in {
+    padding-top: 10px;
+    padding-bottom: 4px; }
+    header #header_in .row .logo {
+      width: 91px; }
+    header #header_in .row .navi {
+      width: 40px;
+      float: right; }
+      header #header_in .row .navi .sp_navi_li {
+        width: 180px;
+        position: absolute;
+        top: 50px;
+        right: 20px;
+        border: 1px solid #eee;
+        background: white;
+        margin: 0;
+        padding: 0;
+        display: none; }
+        header #header_in .row .navi .sp_navi_li li {
+          list-style: none;
+          margin: 0;
+          padding: 0; }
+          header #header_in .row .navi .sp_navi_li li a {
+            display: block;
+            padding: 10px 8px;
+            border-bottom: 1px solid #eee;
+            text-decoration: none;
+            font-size: 14px;
+            font-size: 1.4rem; }
+
+@media (min-width: 768px) {
+  .sp {
+    display: none; }
+
+  .pc {
+    display: block; }
+
+  header #header_in .row .logo {
+    width: 115px; }
+  header #header_in .row .navi {
+    float: left;
+    width: 100%; }
+    header #header_in .row .navi .eight {
+      position: relative; }
+    header #header_in .row .navi .pc_navi_li {
+      margin: 0;
+      margin-bottom: -6px;
+      padding: 0;
+      position: absolute;
+      right: 0;
+      bottom: 0; }
+      header #header_in .row .navi .pc_navi_li li {
+        display: inline-block;
+        list-style: none;
+        border-left: 3px solid #55371e; }
+        header #header_in .row .navi .pc_navi_li li a {
+          color: #55371e;
+          text-decoration: none;
+          font-weight: bold;
+          font-size: 14px;
+          font-size: 1.4rem;
+          float: left;
+          padding: 0 20px; }
+          header #header_in .row .navi .pc_navi_li li a:hover {
+            border-bottom: 3px solid #55371e; }
+        header #header_in .row .navi .pc_navi_li li:last-child {
+          border-right: 3px solid #55371e; } }
 
 /*# sourceMappingURL=style.css.map */
