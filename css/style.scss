@@ -17,6 +17,7 @@ $back_brown: #e9dbd1;
 $brown: #55371e;
 $black: #626262;
 $white: #fff;
+$yellow: #FFF7AA;
 
 body {
     font-family: $ja_font;
@@ -187,6 +188,7 @@ header {
 // #calendar_area
 
 #what {
+    margin-bottom: 30px;
     .title {
         img {
             width: 114px;
@@ -202,14 +204,17 @@ header {
     // .title
     
     .row {
-        margin: 10px;
+        margin: 20px 10px 10px 10px;
         .content {
             position: relative;
             h2 {
                 margin: 20px 0 10px 0;
+                padding: 10px;
                 font-weight: bold;
                 color: $brown;
                 @include fontsize(24);
+                background-color: $yellow;
+                @include border-radius(10px, 10px);
             }
             // h2
             
@@ -228,6 +233,63 @@ header {
     // .row
 }
 // #what
+
+#usage_area {
+    background-color: $back_brown;
+    padding-bottom: 10px;
+    
+    .title {
+        text-align: center;
+        
+        img {
+            width: 98px;
+            padding-bottom: 20px;
+        }
+        
+        p {
+            margin-bottom: 10px;
+        }
+    }
+    
+    h3 {
+        margin-top: 20px;
+        margin-bottom: 10px;
+        @include fontsize(16);
+        color: $brown;
+        font-weight: bold;
+    }
+    
+    p {
+        margin-bottom: 10px;
+    }
+    
+    table {
+        margin-bottom: 20px;
+        border: 1px solid $brown;
+        @include fontsize(12);
+        
+        thead {
+            th {
+                @include fontsize(14);
+                background-color: $brown;
+                color: $white;
+                padding: 0;
+                text-align: center;
+                border-bottom: 1px solid $brown;
+            }
+        }
+        
+        tbody {
+            td {
+                background-color: $white;
+                color: $black;
+                text-align: center;
+                padding: 5px 0;
+                border-bottom: 1px solid $brown;
+            }
+        }
+    }
+}
 
 footer {
     text-align: center;
@@ -392,11 +454,25 @@ footer {
                     margin:auto;
                 }
                 // img
+                
+                h2 {
+                    margin-top: 0;
+                }
             }
             // .content
         }
         // .row
     }
     // #what
+    
+    #usage_area {
+        .row {
+            margin-bottom: 10px;
+        }
+        
+        h3 {
+            margin-top: 0;
+        }
+    }
 }
 // @media (min-width: 768px)

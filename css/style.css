@@ -97,25 +97,71 @@ header {
     #calendar_area .googlecal {
       padding-bottom: 75%; } }
 
-#what .title img {
-  width: 114px;
-  margin-bottom: 20px; }
-#what .title p {
-  margin-bottom: 10px; }
-#what .row {
-  margin: 10px; }
-  #what .row .content {
-    position: relative; }
-    #what .row .content h2 {
-      margin: 20px 0 10px 0;
-      font-weight: bold;
-      color: #55371e;
-      font-size: 24px;
-      font-size: 2.4rem; }
-    #what .row .content p {
+#what {
+  margin-bottom: 30px; }
+  #what .title img {
+    width: 114px;
+    margin-bottom: 20px; }
+  #what .title p {
+    margin-bottom: 10px; }
+  #what .row {
+    margin: 20px 10px 10px 10px; }
+    #what .row .content {
+      position: relative; }
+      #what .row .content h2 {
+        margin: 20px 0 10px 0;
+        padding: 10px;
+        font-weight: bold;
+        color: #55371e;
+        font-size: 24px;
+        font-size: 2.4rem;
+        background-color: #FFF7AA;
+        -moz-border-radius: 10px / 10px;
+        -webkit-border-radius: 10px 10px;
+        border-radius: 10px / 10px; }
+      #what .row .content p {
+        margin-bottom: 10px; }
+      #what .row .content img {
+        width: 100%; }
+
+#usage_area {
+  background-color: #e9dbd1;
+  padding-bottom: 10px; }
+  #usage_area .title {
+    text-align: center; }
+    #usage_area .title img {
+      width: 98px;
+      padding-bottom: 20px; }
+    #usage_area .title p {
       margin-bottom: 10px; }
-    #what .row .content img {
-      width: 100%; }
+  #usage_area h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-size: 1.6rem;
+    color: #55371e;
+    font-weight: bold; }
+  #usage_area p {
+    margin-bottom: 10px; }
+  #usage_area table {
+    margin-bottom: 20px;
+    border: 1px solid #55371e;
+    font-size: 12px;
+    font-size: 1.2rem; }
+    #usage_area table thead th {
+      font-size: 14px;
+      font-size: 1.4rem;
+      background-color: #55371e;
+      color: #fff;
+      padding: 0;
+      text-align: center;
+      border-bottom: 1px solid #55371e; }
+    #usage_area table tbody td {
+      background-color: #fff;
+      color: #626262;
+      text-align: center;
+      padding: 5px 0;
+      border-bottom: 1px solid #55371e; }
 
 footer {
   text-align: center; }
@@ -204,6 +250,13 @@ footer {
     bottom: 0;
     right: 0;
     left: 0;
-    margin: auto; } }
+    margin: auto; }
+  #what .row .content h2 {
+    margin-top: 0; }
+
+  #usage_area .row {
+    margin-bottom: 10px; }
+  #usage_area h3 {
+    margin-top: 0; } }
 
 /*# sourceMappingURL=style.css.map */
