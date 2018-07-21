@@ -186,6 +186,48 @@ header {
 }
 // #calendar_area
 
+#what {
+    .title {
+        img {
+            width: 114px;
+            margin-bottom: 20px;
+        }
+        
+        p {
+            margin-bottom: 10px;
+        }
+    }
+    // .title
+    
+    .row {
+        margin: 10px;
+        .content {
+            position: relative;
+            h2 {
+                margin: 20px 0 10px 0;
+                font-weight: bold;
+                color: $brown;
+                @include fontsize(24);
+            }
+            
+            p {
+                margin-bottom: 10px;
+            }
+            
+            img {
+                position: absolute;
+                width: 100%;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                margin:auto;
+            }
+        }
+    }
+}
+// #what
+
 footer {
     text-align: center;
 

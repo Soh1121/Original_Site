@@ -97,6 +97,32 @@ header {
     #calendar_area .googlecal {
       padding-bottom: 75%; } }
 
+#what .title img {
+  width: 114px;
+  margin-bottom: 20px; }
+#what .title p {
+  margin-bottom: 10px; }
+#what .row {
+  margin: 10px; }
+  #what .row .content {
+    position: relative; }
+    #what .row .content h2 {
+      margin: 20px 0 10px 0;
+      font-weight: bold;
+      color: #55371e;
+      font-size: 24px;
+      font-size: 2.4rem; }
+    #what .row .content p {
+      margin-bottom: 10px; }
+    #what .row .content img {
+      position: absolute;
+      width: 100%;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      margin: auto; }
+
 footer {
   text-align: center; }
   footer #contact {
