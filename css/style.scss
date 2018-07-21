@@ -192,10 +192,12 @@ header {
             width: 114px;
             margin-bottom: 20px;
         }
+        // img
         
         p {
             margin-bottom: 10px;
         }
+        // p
     }
     // .title
     
@@ -209,22 +211,21 @@ header {
                 color: $brown;
                 @include fontsize(24);
             }
+            // h2
             
             p {
                 margin-bottom: 10px;
             }
+            // p
             
             img {
-                position: absolute;
                 width: 100%;
-                top:0;
-                bottom:0;
-                right:0;
-                left:0;
-                margin:auto;
             }
+            // img
         }
+        // .content
     }
+    // .row
 }
 // #what
 
@@ -378,5 +379,24 @@ footer {
         // .cal_wrapper
     }
     // calendar_area
+    
+    #what {
+        .row {
+            .content {
+                img {
+                    position: absolute;
+                    top:0;
+                    bottom:0;
+                    right:0;
+                    left:0;
+                    margin:auto;
+                }
+                // img
+            }
+            // .content
+        }
+        // .row
+    }
+    // #what
 }
 // @media (min-width: 768px)

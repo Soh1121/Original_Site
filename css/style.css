@@ -115,13 +115,7 @@ header {
     #what .row .content p {
       margin-bottom: 10px; }
     #what .row .content img {
-      position: absolute;
-      width: 100%;
-      top: 0;
-      bottom: 0;
-      right: 0;
-      left: 0;
-      margin: auto; }
+      width: 100%; }
 
 footer {
   text-align: center; }
@@ -202,6 +196,14 @@ footer {
 
   #calendar_area .cal_wrapper {
     width: 80%;
-    margin: 2.0833% auto; } }
+    margin: 2.0833% auto; }
+
+  #what .row .content img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto; } }
 
 /*# sourceMappingURL=style.css.map */
