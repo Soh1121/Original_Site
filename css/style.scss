@@ -101,18 +101,19 @@ header {
     // .eyecatch
     
     .discription {
-        padding: 10px;
+        // padding: 10px;
         background-color: $head_brown;
         
         h3 {
             margin: 0;
-            padding-bottom: 10px;
+            padding: 10px;
             font-weight: bold;
             @include fontsize(14);
         }
         
         p {
             margin: 0;
+            padding: 0 10px 10px 10px;
             letter-spacing: 0.05em;
             @include fontsize(12);
         }
@@ -309,10 +310,18 @@ footer {
     // header
     
     #blog_area {
-        .discription {
-            display: none;
+        
+        .columns {
+            position: relative;
+            
+            .discription {
+                display: none;
+                position: absolute;
+                width: 100%;
+                z-index: 100;
+            }
+            // .discription
         }
-        // .discription
     }
     // #blog_area
     

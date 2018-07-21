@@ -53,16 +53,16 @@ header {
     margin-top: 20px;
     margin-bottom: -7px; }
   #blog_area .discription {
-    padding: 10px;
     background-color: #faf3ee; }
     #blog_area .discription h3 {
       margin: 0;
-      padding-bottom: 10px;
+      padding: 10px;
       font-weight: bold;
       font-size: 14px;
       font-size: 1.4rem; }
     #blog_area .discription p {
       margin: 0;
+      padding: 0 10px 10px 10px;
       letter-spacing: 0.05em;
       font-size: 12px;
       font-size: 1.2rem; }
@@ -166,8 +166,13 @@ footer {
         header #header_in .row .navi .pc_navi_li li:last-child {
           border-right: 3px solid #55371e; }
 
-  #blog_area .discription {
-    display: none; }
+  #blog_area .columns {
+    position: relative; }
+    #blog_area .columns .discription {
+      display: none;
+      position: absolute;
+      width: 100%;
+      z-index: 100; }
 
   #calendar_area .cal_wrapper {
     width: 80%;

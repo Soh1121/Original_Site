@@ -88,6 +88,7 @@
           <div class="title">
             <img id="event_info" src="images/event_info.png" alt="イベント情報" srcset="images/event_info@2x.png" />
           </div>
+          
           <img class="eyecatch" src="images/event1.png" alt="読書会" srcset="images/event1@2x.png" />
           <div class="discription">
             <h3>タイトル</h3>
@@ -187,6 +188,17 @@
           $(this).next().slideToggle();
         });
   
+      });
+    });
+  </script>
+  <script>
+    $(function(){
+      $(document).ready(function(){
+        if($(window).innerWidth() > 767){
+          $(".eyecatch").hover(function () {
+            $(this).next().slideToggle();
+          });
+        };  
       });
     });
   </script>
