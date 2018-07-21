@@ -9,6 +9,10 @@ body {
 .pc {
   display: none; }
 
+.title {
+  text-align: center;
+  margin: 30px 0 10px 0; }
+
 header {
   background: #faf3ee; }
   header #header_in {
@@ -41,31 +45,56 @@ header {
             font-size: 14px;
             font-size: 1.4rem; }
 
-#blog_area .eyecatch {
-  width: 100%;
-  margin-top: 20px;
-  margin-bottom: -7px; }
-#blog_area .title {
+#blog_area {
+  padding-bottom: 30px; }
+  #blog_area .eyecatch {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: -7px; }
+  #blog_area .discription {
+    padding: 10px;
+    background-color: #faf3ee; }
+    #blog_area .discription h3 {
+      margin: 0;
+      padding-bottom: 10px;
+      font-weight: bold;
+      font-size: 14px;
+      font-size: 1.4rem; }
+    #blog_area .discription p {
+      margin: 0;
+      letter-spacing: 0.05em;
+      font-size: 12px;
+      font-size: 1.2rem; }
+  #blog_area .event #event_info {
+    width: 240px; }
+  #blog_area .staff #staff_blog {
+    width: 151px; }
+
+#calendar_area {
+  background-color: #e9dbd1;
   text-align: center;
-  margin: 30px 0 10px 0; }
-#blog_area .discription {
-  padding: 10px;
-  background-color: #faf3ee; }
-  #blog_area .discription h3 {
-    margin: 0;
-    padding-bottom: 10px;
-    font-weight: bold;
-    font-size: 14px;
-    font-size: 1.4rem; }
-  #blog_area .discription p {
-    margin: 0;
-    letter-spacing: 0.05em;
-    font-size: 12px;
-    font-size: 1.2rem; }
-#blog_area .event #event_info {
-  width: 240px; }
-#blog_area .staff #staff_blog {
-  width: 151px; }
+  padding-bottom: 30px; }
+  #calendar_area .title img {
+    width: 128px; }
+  #calendar_area p {
+    margin: 0; }
+  #calendar_area .cal_wrapper {
+    width: 100%;
+    max-width: 960px;
+    margin: 2.0833% auto; }
+  #calendar_area .googlecal {
+    position: relative;
+    padding-bottom: 100%;
+    height: 0; }
+  #calendar_area .googlecal iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important; }
+  @media only screen and (min-width: 768px) {
+    #calendar_area .googlecal {
+      padding-bottom: 75%; } }
 
 footer {
   text-align: center; }
@@ -137,6 +166,10 @@ footer {
           border-right: 3px solid #55371e; }
 
   #blog_area .discription {
-    display: none; } }
+    display: none; }
+
+  #calendar_area .cal_wrapper {
+    width: 80%;
+    margin: 2.0833% auto; } }
 
 /*# sourceMappingURL=style.css.map */
