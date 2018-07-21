@@ -16,10 +16,13 @@ $head_brown: #faf3ee;
 $back_brown: #e9dbd1;
 $brown: #55371e;
 $black: #626262;
+$white: #fff;
 
 body {
     font-family: $ja_font;
+    color: $black;
 }
+// body
 
 .pc {
     display: none;
@@ -79,6 +82,60 @@ header {
     // #header_in
 }
 // header
+
+footer {
+    text-align: center;
+
+    #contact {
+        background-color: $white;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        
+        img {
+            width: 120px;
+            margin-bottom: 10px;
+        }
+        // img
+        
+        p {
+            margin-bottom: 10px;
+        }
+        // p
+        
+        .btn-wrap {
+            .btn {
+                width: 200px;
+                margin: 10px;
+                padding: 15px;
+                display: inline-block;
+                border-radius: 5px;
+                text-decoration: none;
+                letter-spacing: 0.05em;
+            }
+            // .btn
+            
+            .btn-primary {
+                background-color: $brown;
+                color: $white;
+            }
+            // .btn-primary
+        }
+        // .btn-wrap
+    }
+    // #contact
+    
+    #copyright {
+        background-color: $head_brown;
+        p {
+            margin: 0;
+            padding: 15px;
+            @include fontsize(12);
+            color: #B5ACA4;
+        }
+    }
+    // #copyright
+}
+// footer
 
 // PCサイト
 @media (min-width: 768px) {

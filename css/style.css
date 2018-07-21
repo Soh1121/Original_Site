@@ -3,7 +3,8 @@ html {
   font-size: 62.5%; }
 
 body {
-  font-family: "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Verdana, "ＭＳ Ｐゴシック", sans-serif; }
+  font-family: "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Verdana, "ＭＳ Ｐゴシック", sans-serif;
+  color: #626262; }
 
 .pc {
   display: none; }
@@ -39,6 +40,37 @@ header {
             text-decoration: none;
             font-size: 14px;
             font-size: 1.4rem; }
+
+footer {
+  text-align: center; }
+  footer #contact {
+    background-color: #fff;
+    padding-top: 30px;
+    padding-bottom: 30px; }
+    footer #contact img {
+      width: 120px;
+      margin-bottom: 10px; }
+    footer #contact p {
+      margin-bottom: 10px; }
+    footer #contact .btn-wrap .btn {
+      width: 200px;
+      margin: 10px;
+      padding: 15px;
+      display: inline-block;
+      border-radius: 5px;
+      text-decoration: none;
+      letter-spacing: 0.05em; }
+    footer #contact .btn-wrap .btn-primary {
+      background-color: #55371e;
+      color: #fff; }
+  footer #copyright {
+    background-color: #faf3ee; }
+    footer #copyright p {
+      margin: 0;
+      padding: 15px;
+      font-size: 12px;
+      font-size: 1.2rem;
+      color: #B5ACA4; }
 
 @media (min-width: 768px) {
   .sp {
