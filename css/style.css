@@ -171,7 +171,7 @@ header {
     color: #55371e; }
   #archive_area #bread_list {
     margin: 0;
-    padding: 10px 0;
+    padding: 30px 0 10px 0;
     font-size: 12px;
     font-size: 1.2rem; }
   #archive_area .post-list-inner {
@@ -210,6 +210,45 @@ header {
         text-align: right;
         bottom: 0;
         right: 0; }
+
+#map_area {
+  margin: 0;
+  padding-top: 10px;
+  background-color: #e9dbd1; }
+  #map_area .title {
+    margin-bottom: 30px; }
+    #map_area .title img {
+      width: 92px;
+      margin-bottom: 20px; }
+  #map_area .map {
+    margin-bottom: 30px; }
+  #map_area #map1 {
+    width: 100%; }
+  #map_area h2 {
+    padding: 10px;
+    font-weight: bold;
+    color: #55371e;
+    font-size: 24px;
+    font-size: 2.4rem;
+    background-color: #FFF7AA;
+    -moz-border-radius: 10px / 10px;
+    -webkit-border-radius: 10px 10px;
+    border-radius: 10px / 10px; }
+  #map_area h3 {
+    padding: 0 10px;
+    font-weight: bold;
+    color: #55371e;
+    font-size: 18px;
+    font-size: 1.8rem; }
+  #map_area p {
+    padding: 0 20px;
+    margin: 0; }
+  #map_area li {
+    padding: 0 20px; }
+  #map_area .address {
+    margin-bottom: 30px; }
+  #map_area .access {
+    margin-bottom: 30px; }
 
 footer {
   text-align: center; }
@@ -326,6 +365,9 @@ footer {
       padding: 15px;
       padding-top: 0; }
     #archive_area .post-list-inner .post-list-meta .date {
-      right: 10px; } }
+      right: 10px; }
+
+  #map_area #map1 {
+    width: 80%; } }
 
 /*# sourceMappingURL=style.css.map */

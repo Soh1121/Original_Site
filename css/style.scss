@@ -304,7 +304,7 @@ header {
     
     #bread_list {
         margin: 0;
-        padding: 10px 0;
+        padding: 30px 0 10px 0;
         @include fontsize(12);
     }
     // #bread_list
@@ -361,6 +361,63 @@ header {
     
 }
 // #archive_area
+
+#map_area {
+    margin: 0;
+    padding-top: 10px;
+    background-color: $back_brown;
+    .title {
+        margin-bottom: 30px;
+        img {
+            width: 92px;
+            margin-bottom: 20px;
+        }
+        // img
+    }
+    // .title
+    
+    .map {
+        margin-bottom: 30px;
+    }
+    
+    #map1 {
+        width: 100%;
+    }
+    
+    h2 {
+        padding: 10px;
+        font-weight: bold;
+        color: $brown;
+        @include fontsize(24);
+        background-color: $yellow;
+        @include border-radius(10px, 10px);
+    }
+    
+    h3 {
+        padding: 0 10px;
+        font-weight: bold;
+        color: $brown;
+        @include fontsize(18);
+    }
+    
+    p {
+        padding: 0 20px;
+        margin: 0;
+    }
+    
+    li {
+        padding: 0 20px;
+    }
+    
+    .address {
+        margin-bottom: 30px;
+    }
+    
+    .access {
+        margin-bottom: 30px;
+    }
+}
+// #map_area
 
 footer {
     text-align: center;
@@ -588,5 +645,11 @@ footer {
         // .post-list-inner
     }
     // #archive_area
+    
+    #map_area{
+        #map1 {
+            width: 80%;
+        }
+    }
 }
 // @media (min-width: 768px)
