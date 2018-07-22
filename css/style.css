@@ -13,6 +13,19 @@ body {
   text-align: center;
   margin: 30px 0 10px 0; }
 
+.btn {
+  width: 200px;
+  margin: 10px;
+  padding: 15px;
+  display: inline-block;
+  border-radius: 5px;
+  text-decoration: none;
+  letter-spacing: 0.05em; }
+
+.btn-primary {
+  background-color: #55371e;
+  color: #fff; }
+
 header {
   background: #faf3ee; }
   header #header_in {
@@ -49,6 +62,8 @@ header {
 
 #blog_area {
   padding-bottom: 30px; }
+  #blog_area a {
+    color: #626262; }
   #blog_area .eyecatch {
     width: 100%;
     margin-top: 20px;
@@ -250,6 +265,21 @@ header {
   #map_area .access {
     margin-bottom: 30px; }
 
+#contact_area {
+  margin: 0;
+  padding-bottom: 30px;
+  padding-top: 10px;
+  background-color: #e9dbd1; }
+  #contact_area .title {
+    margin-bottom: 30px; }
+    #contact_area .title img {
+      width: 120px;
+      margin-bottom: 20px; }
+    #contact_area .title .btn {
+      margin: 20px 10px; }
+    #contact_area .title p {
+      margin: 0; }
+
 footer {
   text-align: center; }
   footer #contact {
@@ -261,17 +291,6 @@ footer {
       margin-bottom: 10px; }
     footer #contact p {
       margin-bottom: 10px; }
-    footer #contact .btn-wrap .btn {
-      width: 200px;
-      margin: 10px;
-      padding: 15px;
-      display: inline-block;
-      border-radius: 5px;
-      text-decoration: none;
-      letter-spacing: 0.05em; }
-    footer #contact .btn-wrap .btn-primary {
-      background-color: #55371e;
-      color: #fff; }
   footer #copyright {
     background-color: #faf3ee; }
     footer #copyright p {

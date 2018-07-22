@@ -5,7 +5,7 @@
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
-  <title>アクセス - Access | ろさき - ROSAKI</title>
+  <title>お問い合わせ - Contact | ろさき - ROSAKI</title>
   <meta name="description" content="">
   <meta name="author" content="">
 
@@ -70,91 +70,29 @@
   </header>
   <!-- header -->
   
-  <div id="map_area">
+  <div id="contact_area">
     <div class="container">
       <div class="title">
-        <img src="images/access.png" alt="アクセス" srcset="images/access@2x.png" />
-        <p class="sp">弘前高校・弘前大学近く<br>
-        弘南鉄道大鰐線『弘高下』徒歩１分に<br>
-        位置します。<br>
-        出張や旅行の拠点としても<br>
-        ご利用いただけます。</p>
-        <p class="pc">弘前高校・弘前大学に近い弘南鉄道大鰐線『弘高下』徒歩１分に位置します。<br>
-        出張や旅行の拠点としてもご利用いただけます。</p>
+        <img src="images/contact.png" alt="お問い合わせ" srcset="images/contact@2x.png" />
+        <p class="sp">営業時間は<br>７:００〜１９:００<br>
+        となっています。<br>
+        定休日は毎週水曜日です。</p>
+        <p class="pc">営業時間は７:００〜１９:００となっています。定休日は毎週水曜日です。</p>
+        
+        <a href="#" class="btn btn-primary">お電話：0000-000-000</a>
+        
+        <p class="sp">メールでのお問い合わせは<br>
+        下記のフォーム、または<br>
+        rosaki@example.com<br>
+        までお問い合わせください。</p>
+        <p class="pc">メールでのお問い合わせは下記のフォーム、<br>またはrosaki@example.comまでお問い合わせください。</p>
       </div>
-    </div>
       
-    <div class="map">
-      <script src="//maps.googleapis.com/maps/api/js?key=AIzaSyC9VJpDhS2eU9h_RjJkzEmhIgcAdSfpoj4"></script>
-      <script type="text/javascript">
-      function googleMap() {
-      var latlng = new google.maps.LatLng(40.592314, 140.469035);/* 座標 */
-      var myOptions = {
-      zoom: 16, /*拡大比率*/
-      center: latlng,
-      scrollwheel: false,
-      disableDoubleClickZoom: true,
-      draggable: false,
-      mapTypeControlOptions: { mapTypeIds: ['style', google.maps.MapTypeId.ROADMAP] }
-      };
-      var map = new google.maps.Map(document.getElementById('map1'), myOptions);
+      <p style="text-align:center;padding:100px;border:1px solid #ddd; background: #fff; margin: 0;">[コメントフォーム設置場所]</p>
       
-      /*アイコン設定*/
-      var icon = new google.maps.MarkerImage('images/pin.png',/*画像url*/
-      new google.maps.Size(48,56),/*アイコンサイズ*/
-      new google.maps.Point(0,0)/*アイコン位置*/
-      );
-      var markerOptions = {
-      position: latlng,
-      map: map,
-      icon: icon,
-      title: 'ろさき',/*タイトル*/
-      animation: google.maps.Animation.DROP/*アニメーション*/
-      };
-      var marker = new google.maps.Marker(markerOptions);
-      
-      /*取得スタイルの貼り付け*/
-      var styleOptions = [
-      {
-      "stylers": [
-      { "hue": '#e9dbd1' }
-      ]
-      }
-      ];
-      
-      var styledMapOptions = { name: 'ろさき' }/*地図右上のタイトル*/
-      var sampleType = new google.maps.StyledMapType(styleOptions, styledMapOptions);
-      map.mapTypes.set('style', sampleType);
-      map.setMapTypeId('style');
-      };
-      google.maps.event.addDomListener(window, 'load', function() {
-      googleMap();
-      });
-      </script>
-      <div id="map1" style="height:400px; margin:0 auto;"></div>
-    </div>
-  
-    <div class="container">
-      <div class="detail">
-        <div class="address">
-          <h2>Address</h2>
-          <h3>住所</h3>
-          <p>〒036-0000</p>
-          <p>青森県弘前市弘前町０−０（大きい地図はこちら）</p>
-        </div>
-        <div class="access">
-          <h2>Access</h2>
-          <h3>アクセス</h3>
-          <ul>
-            <li>JR奥羽線・弘前駅より徒歩２０分</li>
-            <li>弘南鉄道大鰐線・弘高下より徒歩１分</li>
-          </ul>
-          <p>お車でお越しの方は駐車場をご利用ください。（５台まで）</p>
-        </div>
-      </div>
     </div>
   </div>
-  <!-- #map_area -->
+  <!-- #contact_area -->
   
   <footer>
     <div id="contact">
