@@ -62,6 +62,7 @@ header {
                     background: white;
                     margin: 0;
                     padding: 0;
+                    z-index: 100;
                     display: none;
                     
                     li {
@@ -290,6 +291,76 @@ header {
         }
     }
 }
+// #usage_area
+
+#archive_area {
+    background-color: $back_brown;
+    padding-bottom: 20px;
+    
+    a {
+        color: $brown;
+    }
+    // a
+    
+    #bread_list {
+        margin: 0;
+        padding: 10px 0;
+        @include fontsize(12);
+    }
+    // #bread_list
+    
+    .post-list-inner {
+        overflow: hidden;
+        width: 100%;
+        margin-bottom: 10px;
+        
+        .post-list-thumb {
+            float: left;
+            width: 50%;
+            
+            img {
+                width: auto;
+                height: auto;
+                max-width: 100%;
+                max-height: 100%;
+            }
+            // img
+        }
+        // .post-list-thumb
+        
+        .post-list-meta {
+            float: right;
+            background-color: $white;
+            width: 50%;
+            height: 100%;
+            max-height: 100%;
+            position: relative;
+            
+            h2 {
+                margin: 0;
+                padding: 15px;
+                padding-bottom: 20px;
+                @include fontsize(14);
+                line-height: 1.4rem;
+                font-weight: bold;
+            }
+            
+            .date {
+                position: absolute;
+                padding: 0 15px;
+                @include fontsize(12);
+                color: #B5ACA4;
+                text-align: right;
+                bottom: 0;
+                right: 0;
+            }
+        }
+        // .post-list-meta
+    }
+    // .post-list-inner
+    
+}
+// #archive_area
 
 footer {
     text-align: center;
@@ -464,6 +535,7 @@ footer {
                 h2 {
                     margin-top: 0;
                 }
+                // h2
             }
             // .content
         }
@@ -475,10 +547,46 @@ footer {
         .row {
             margin-bottom: 10px;
         }
+        // .row
         
         h3 {
             margin-top: 0;
         }
+        // h3
     }
+    // #usage_area
+    
+    #archive_area {
+        .post-list-inner {
+            .post-list-thumb {
+                width: 40%;
+            }
+            // .post-list-thumb
+            
+            .post-list-meta {
+                width: 60%;
+                
+                h2 {
+                    @include fontsize(18);
+                }
+                // .h2
+                
+                p {
+                    margin: 0;
+                    padding: 15px;
+                    padding-top: 0;
+                }
+                // p
+                
+                .date {
+                    right: 10px;
+                }
+                // .date
+            }
+            // .post-list-meta
+        }
+        // .post-list-inner
+    }
+    // #archive_area
 }
 // @media (min-width: 768px)

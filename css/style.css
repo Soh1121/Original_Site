@@ -32,6 +32,7 @@ header {
         background: white;
         margin: 0;
         padding: 0;
+        z-index: 100;
         display: none; }
         header #header_in .row .navi .sp_navi_li li {
           list-style: none;
@@ -163,6 +164,53 @@ header {
       padding: 5px 0;
       border-bottom: 1px solid #55371e; }
 
+#archive_area {
+  background-color: #e9dbd1;
+  padding-bottom: 20px; }
+  #archive_area a {
+    color: #55371e; }
+  #archive_area #bread_list {
+    margin: 0;
+    padding: 10px 0;
+    font-size: 12px;
+    font-size: 1.2rem; }
+  #archive_area .post-list-inner {
+    overflow: hidden;
+    width: 100%;
+    margin-bottom: 10px; }
+    #archive_area .post-list-inner .post-list-thumb {
+      float: left;
+      width: 50%; }
+      #archive_area .post-list-inner .post-list-thumb img {
+        width: auto;
+        height: auto;
+        max-width: 100%;
+        max-height: 100%; }
+    #archive_area .post-list-inner .post-list-meta {
+      float: right;
+      background-color: #fff;
+      width: 50%;
+      height: 100%;
+      max-height: 100%;
+      position: relative; }
+      #archive_area .post-list-inner .post-list-meta h2 {
+        margin: 0;
+        padding: 15px;
+        padding-bottom: 20px;
+        font-size: 14px;
+        font-size: 1.4rem;
+        line-height: 1.4rem;
+        font-weight: bold; }
+      #archive_area .post-list-inner .post-list-meta .date {
+        position: absolute;
+        padding: 0 15px;
+        font-size: 12px;
+        font-size: 1.2rem;
+        color: #B5ACA4;
+        text-align: right;
+        bottom: 0;
+        right: 0; }
+
 footer {
   text-align: center; }
   footer #contact {
@@ -264,6 +312,20 @@ footer {
   #usage_area .row {
     margin-bottom: 10px; }
   #usage_area h3 {
-    margin-top: 0; } }
+    margin-top: 0; }
+
+  #archive_area .post-list-inner .post-list-thumb {
+    width: 40%; }
+  #archive_area .post-list-inner .post-list-meta {
+    width: 60%; }
+    #archive_area .post-list-inner .post-list-meta h2 {
+      font-size: 18px;
+      font-size: 1.8rem; }
+    #archive_area .post-list-inner .post-list-meta p {
+      margin: 0;
+      padding: 15px;
+      padding-top: 0; }
+    #archive_area .post-list-inner .post-list-meta .date {
+      right: 10px; } }
 
 /*# sourceMappingURL=style.css.map */
