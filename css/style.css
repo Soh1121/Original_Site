@@ -12,6 +12,8 @@ body {
 .title {
   text-align: center;
   margin: 30px 0 10px 0; }
+  .title p {
+    margin-bottom: 10px; }
 
 .btn {
   width: 200px;
@@ -148,8 +150,6 @@ header {
     #usage_area .title img {
       width: 98px;
       padding-bottom: 20px; }
-    #usage_area .title p {
-      margin-bottom: 10px; }
   #usage_area h3 {
     margin-top: 20px;
     margin-bottom: 10px;
@@ -442,6 +442,9 @@ footer {
       right: 10px; }
 
   #map_area #map1 {
-    width: 80%; } }
+    width: 80%; }
+
+  #contact a:hover {
+    color: #fff; } }
 
 /*# sourceMappingURL=style.css.map */
